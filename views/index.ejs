@@ -8,7 +8,14 @@
       <div>
         <strong><%= msg.user %>:</strong> <%= msg.text %>
         <em><%= msg.added %></em>
+            <a href=<%=`/message/${msg.user}`%>>
+                <button>Details</button>
+            </a>
       </div>
     <% }); %>
+
+    <a href="new">
+      <Button>Post New Message</button>
+    </a>
   </body>
 </html>
