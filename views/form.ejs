@@ -1,16 +1,20 @@
 <html>
+  <head>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
   <body>
-    <form method="POST" action="/new">
+    <%- include('header', {title: 'myMessageBoard'}) %>
+    <form id="post-message" method="POST" action="/new">
       <h1>New Message</h1>
-      <label>Author:
-        <input name="sender" type="text" required>
-      </label>
-
-      <label>Message:
-        <input name="text" type="text" required>
-      </label>
-
-      <button type="submit">Send</button>
+      <label>Name</label>
+      <input class="form-name" name="sender" type="text" required>
+      <br>
+      <label>Message</label>
+      <textarea name="text" rows="6" required></textarea>
+      <br>
+      <button class="new-message" type="submit">Send</button>
     </form>
+
+    <div><a href="/">Return to Message Board</a></div>
   </body>
 </html>

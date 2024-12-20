@@ -1,21 +1,29 @@
 <html>
   <head>
     <title>Homepage</title>
+    <link rel="stylesheet" href="/styles.css">
   </head>
   <body>
-    <h1><%= title %></h1>
-    <% messages.forEach((msg) => { %>
-      <div>
-        <strong><%= msg.user %>:</strong> <%= msg.text %>
-        <em><%= msg.added %></em>
+    <%- include('header', {title: 'myMessageBoard'}) %>
+    <div class="message-board">
+      <% messages.forEach((msg) => { %>
+        <div class="message">
+          <div>
+            <span class="message-user"><%= msg.user %> </span>
+            <span class="message-timestamp"><%= msg.added %></span>
             <a href=<%=`/message/${msg.id}`%>>
-                <button>Details</button>
+              <button class="message-details">Details</button>
             </a>
-      </div>
-    <% }); %>
+          </div>
+            <span class="message-text"><%= msg.text %></span>
+
+        </div>
+      <% }); %>
+    </div>
 
     <a href="new">
-      <Button>Post New Message</button>
+      <Button class="new-message">Post New Message</button>
     </a>
+
   </body>
 </html>

@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: rgb(246, 246, 246);
+  font-size: 1.25rem;
+  font-family: "Ubuntu", sans-serif;
+  color: rgb(48, 48, 48);
+}
+
+button,
+input,
+textarea {
+  font-size: 1.1rem;
+}
+
+input,
+textarea {
+  line-height: 1.5rem;
+}
+
+.header {
+  background-color: rgb(23, 68, 127);
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.message-board {
+  background-color: white;
+  padding: 40px;
+  max-width: 1200px;
+  min-width: 600px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.message-details {
+  position: absolute;
+  right: 0;
+}
+
+.new-message {
+  background-color: rgb(0, 154, 0);
+  border: none;
+  border-radius: 4px;
+  margin: 10px;
+  padding: 10px;
+  color: white;
+  font-size: inherit;
+}
+.new-message:hover {
+  background-color: green;
+}
+
+#post-message {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  width: 100%;
+}
+
+.form-name {
+  width: 300px;
+}
+
+.message-detail {
+  background-color: white;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  place-self: center;
+  position: relative;
+  max-width: 1200px;
+  min-width: 600px;
+  margin: 50px;
+}
+
+.message-info {
+  display: flex;
+  align-items: center;
+  min-width: 300px;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+.message-user {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.message-timestamp {
+  color: rgb(136, 136, 136);
+  font-size: 1rem;
+  font-style: oblique;
+  margin-left: 10px;
+}
+
+.message-text {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.message-id {
+  color: rgb(136, 136, 136);
+  font-size: 1rem;
+  font-style: oblique;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
