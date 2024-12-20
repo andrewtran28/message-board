@@ -1,0 +1,24 @@
+{
+  "name": "message-board",
+  "version": "1.0.0",
+  "description": "A mini message board created using Express.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewtran28/message-board.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/andrewtran28/message-board/issues"
+  },
+  "homepage": "https://github.com/andrewtran28/message-board#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
