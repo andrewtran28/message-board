@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/andrewtran28/message-board#readme",
   "dependencies": {
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "express-async-handler": "^1.2.0"
   }
 }
