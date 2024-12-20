@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background-color: rgb(246, 246, 246);
+  background-color: rgb(232, 232, 232);
   font-size: 1.25rem;
   font-family: "Ubuntu", sans-serif;
   color: rgb(48, 48, 48);
@@ -41,6 +41,7 @@ textarea {
   padding: 40px;
   max-width: 1200px;
   min-width: 600px;
+  margin: 30px 0;
 }
 
 .message {
@@ -58,7 +59,6 @@ textarea {
   background-color: rgb(0, 154, 0);
   border: none;
   border-radius: 4px;
-  margin: 10px;
   padding: 10px;
   color: white;
   font-size: inherit;
