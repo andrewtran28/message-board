@@ -9,6 +9,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
+app.engine('ejs', require('ejs').__express);
 
 app.use("/", indexRouter);
 app.use((err, req, res, next) => {
