@@ -113,6 +113,8 @@ textarea {
 .message-text {
   padding: 10px 20px;
   margin-bottom: 20px;
+  word-break: break-word;
+  text-wrap: wrap;
 }
 
 .message-id {
